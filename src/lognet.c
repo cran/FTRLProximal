@@ -49,8 +49,8 @@ void lognet_predict(double *X, double *theta, double *yhat, int *m, int *n)
  * Online elastic net logistic regression trained using FTRL-Proximal
  * see https://www.eecs.tufts.edu/~dsculley/papers/ad-click-prediction.pdf
  */
-void lognet_ftrlprox(double *X, double *theta, double *y, unsigned int *m, 
-                     unsigned int *n, double *z, double *nn, double *J,
+void lognet_ftrlprox(double *X, double *theta, double *y, int *m, 
+                     int *n, double *z, double *nn, double *J,
                      unsigned int *num_epochs, double *alpha, double *bnn,
                      double *lambda1, double *lambda2, unsigned int *save_loss)
 
